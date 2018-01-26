@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        >
+        <RadioButton
+            android:id="@+id/rb_weixin"
+            style="@style/bottom_tab"
+            android:drawableTop="@drawable/set_weixin"
+            android:text="微信"/>
+
+        <RadioButton
+            android:id="@+id/rb_tongxinlu"
+            style="@style/bottom_tab"
+            android:drawableTop="@drawable/set_tongxinlu"
+            android:text="通信录"/>
+
+        <RadioButton
+            android:id="@+id/rb_faxian"
+            style="@style/bottom_tab"
+            android:drawableTop="@drawable/set_faxian"
+            android:text="发现"/>
+
+        <RadioButton
+            android:id="@+id/rb_wo"
+            style="@style/bottom_tab"
+            android:drawableTop="@drawable/set_wo"
+            android:text="我"/>
+
+    </RadioGroup>
+</LinearLayout>
